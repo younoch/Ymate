@@ -1,0 +1,14 @@
+{
+  "name": "ymate",
+  "version": "1.0.0",
+  "description": "A small fun web application. Where randomly the names of friends will come.",
+  "main": "app.js",
+  "scripts": {
+    "y": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Younoch",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
