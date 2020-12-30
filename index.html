@@ -9,19 +9,26 @@
     <title>Document</title>
 </head>
 <body>
+
 <div class="container">
-    <img class="bkImage" src="attachment/bk.jpg">
+    <div class="bk">
+        <div class="bk__back"></div>
+        <img src="attachment/top.png" alt="" class="bk__top">
+        <img src="attachment/bottom.png" alt="" class="bk__bottom">
+    </div>
+
     <section class="page1">
         <div class="page1__name">
-            <p class="page1__nameText">Pick your Full Name</p>
-            <input type="text" class="page1__nameBox">
+            <p class="page1__nameTitle">Pick your Full Name</p>
+            <input type="text" class="page1__nameInput">
         </div>
-        <div class="page__id">
-            <p class="page1__idText">Pick your Full ID</p>
-            <input type="text" class="page1__idBox">
+        <div class="page1__id">
+            <p class="page1__idTitle">Pick your Full ID</p>
+            <input type="text" class="page1__idInput">
         </div>
-        
-        
+
+        <button type="submit" class="page1__submit btn">Confirm</button>
+
     </section>
 </div>
 </body>

@@ -1,0 +1,21 @@
+//Defult Button Style 
+.btn {
+    background-color: $color-tomato-warm;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    text-shadow: none;
+    padding: 3px 10px;
+    border-radius: 7px;
+    font-size: 5vw;
+    font-weight: 600;
+    opacity: .7;
+}
+.btn:hover {
+    opacity: 1;
+}
+.btn:active, .btn:visited {
+    transform: translate(1px, 4px);
+    opacity: 1; 
+}

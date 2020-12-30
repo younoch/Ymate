@@ -1,23 +1,41 @@
+//Page 1
 .page1 {
     margin: 0%;
     @include center;
 
-    font-size: 6vw;
+    font-size: 6.5vw;
     font-family: 'Roboto', sans-serif;
-    font-weight: 500;
+    font-weight: 700;
     text-align: center;
-    color:#1B1464 ;
+    color:$color-voilate ;
+    top: 52%;
+
+    &__nameTitle, &__idTitle {
+        margin-bottom: 1vh;
+    }
     
     &__name, &__id{
-        width: 90vh;
-        margin-bottom: 0; 
+        width: 65vw;
     }
-    &__nameBox, &__idBox {
-        @include center-h;
-        background-color: #1B1464;
-        width: 50%;
-        margin-bottom: 40px;
-        margin-top: 0;
-    
+     &__id {
+         margin-top: -2vh;
+     }
+    &__nameInput, &__idInput {
+        background-color: $color-voilate;
+        border-radius: 7.5px;
+        padding: .45vh;
+
+        font-weight: 500;
+        font-size: 5.8vw;
+        color: white;
+        text-align: center;
+    } 
+    &__idInput {
+        width: 42vw;
+
+    }
+
+    &__submit {
+        margin-top: 3vh;
     }
 }
