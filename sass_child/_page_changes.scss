@@ -8,18 +8,16 @@
     font-weight: 700;
     text-align: center;
     color:$color-voilate ;
-    top: 52%;
+    width: fit-content;
+
+    &__name{
+        margin: 1.5vh;
+    }
 
     &__nameTitle, &__idTitle {
         margin-bottom: 1vh;
     }
     
-    &__name, &__id{
-        width: 65vw;
-    }
-     &__id {
-         margin-top: -2vh;
-     }
     &__nameInput, &__idInput {
         background-color: $color-voilate;
         border-radius: 7.5px;

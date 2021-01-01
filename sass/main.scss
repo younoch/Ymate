@@ -1,6 +1,6 @@
-@import 'sass/_mixin';
-@import 'sass/_veriables';
-@import 'sass/_elements';
-@import 'sass/_preset';
-@import 'sass/_background';
-@import 'sass/_page_changes';
+@import 'sass_child/mixin';
+@import 'sass_child/veriables';
+@import 'sass_child/elements';
+@import 'sass_child/base';
+@import 'sass_child/background';
+@import 'sass_child/page_changes';
