@@ -7,11 +7,11 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     text-align: center;
-    color:$color-voilate ;
+    color:$color-voilate;
     width: fit-content;
 
     &__name{
-        margin: 1.5vh;
+        margin: 3vw;
     }
 
     &__nameTitle, &__idTitle {
@@ -20,17 +20,19 @@
     
     &__nameInput, &__idInput {
         background-color: $color-voilate;
-        border-radius: 7.5px;
-        padding: .45vh;
+        border-radius: 8px;
+        padding: 1.25vw 2vw;
 
-        font-weight: 500;
+        font-weight: 600;
         font-size: 5.8vw;
         color: white;
         text-align: center;
+        text-transform: uppercase;
     } 
-    &__idInput {
-        width: 42vw;
 
+    &__idInput {
+        width: 50vw;
+        max-width: fit-content;
     }
 
     &__submit {

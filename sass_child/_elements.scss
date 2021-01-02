@@ -7,18 +7,19 @@
     outline: none;
     border: none;
     text-shadow: none;
-    padding: 7px 15px;
-    border-radius: 10px;
+    padding: 10px 18px;
+    border-radius: 13px;
     font-size: 5vw;
     font-weight: 600;
     opacity: .8;
     transition: all 0.15s;
-    border: none;
     position: relative;
+    width: fit-content;
 }
 .btn:hover {
     opacity: 1;
 }
+
 .btn:active, .btn:visited, .btn:active::after {
     opacity: 1; 
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
