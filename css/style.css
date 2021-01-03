@@ -11,7 +11,7 @@
   font-size: 5vw;
   font-weight: 600;
   opacity: .8;
-  transition: all 0.15s;
+  transition: all 0.25s;
   position: relative;
   width: fit-content; }
 
@@ -25,8 +25,7 @@
 
 * {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
+  padding: 0; }
 
 body {
   font-size: 10vw;
@@ -38,12 +37,12 @@ body {
 .container {
   height: 100%;
   width: 100%;
+  position: relative;
   text-align: center; }
 
 @media only screen and (min-width: 960px) {
   .container {
     height: 80vh;
-    margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -53,7 +52,6 @@ body {
 .author {
   position: absolute;
   bottom: 5.9vw;
-  margin: 0 auto;
   position: absolute;
   left: 50%;
   -ms-transform: translateX(-50%);
@@ -76,7 +74,9 @@ body {
   z-index: -2;
   width: 100%;
   height: 100%;
-  position: relative; }
+  position: absolute;
+  top: 0;
+  bottom: 0; }
   .bk__back {
     width: 100%;
     height: 100%;
@@ -95,7 +95,6 @@ body {
 
 .page1 {
   margin: 0%;
-  margin: 0;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -106,6 +105,7 @@ body {
   font-weight: 700;
   color: #1B1464;
   width: fit-content;
+  z-index: 1;
   display: none; }
   .page1__name {
     margin: 3vw; }
@@ -128,22 +128,22 @@ body {
 .page2 {
   z-index: 2;
   position: absolute;
-  margin: auto, 0;
   position: absolute;
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   color: #1B1464;
   width: 100%;
-  transform: translateY(-42%); }
+  transform: translateY(-42%);
+  display: none; }
   .page2__text {
     font-size: 7.5vw;
     font-weight: 600; }
   .page2__user-name {
-    color: yellow;
+    color: black;
     font-weight: 800;
     font-size: 8.2vw;
-    padding: 1vh 0 3vh 0; }
+    padding: 1vh 0 2vh 0; }
   .page2__batch {
     color: #FF3726;
     text-transform: uppercase;
