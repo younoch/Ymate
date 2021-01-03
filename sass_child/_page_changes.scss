@@ -2,13 +2,14 @@
 .page1 {
     margin: 0%;
     @include center;
-
     font-size: 6.5vw;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    text-align: center;
     color:$color-voilate;
     width: fit-content;
+
+    //temporay value
+    display: none;
 
     &__name{
         margin: 3vw;
@@ -26,7 +27,7 @@
         font-weight: 600;
         font-size: 5.8vw;
         color: white;
-        text-align: center;
+        
         text-transform: uppercase;
     } 
 
@@ -37,5 +38,35 @@
 
     &__submit {
         margin-top: 3vh;
+    }
+}
+.page2{
+    z-index: 2;
+    position: absolute;
+    @include center-v;
+    color: $color-voilate;
+    width: 100%;
+    transform: translateY(-42%);
+
+    &__text {
+        font-size: 7.5vw;
+        font-weight: 600;
+    }
+
+    &__user-name{
+        color: yellow;
+        font-weight: 800;
+        font-size: 8.2vw;
+        padding: 1vh 0 3vh 0;
+    }
+
+    &__batch {
+        color: $color-tomato-warm;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    &__submit {
+        margin-top: 5vw;
     }
 }

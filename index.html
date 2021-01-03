@@ -9,29 +9,40 @@
     <title>Document</title>
 </head>
 <body>
-
-<div class="container">
+    <!-- Background -->
     <div class="bk">
         <div class="bk__back"></div>
         <img src="attachment/tp.png" alt="" class="bk__top">
         <img src="attachment/bt.png" alt="" class="bk__bottom">
     </div>
+    <main class="container">
+        <section class="page1">
+            <div class="page1__name">
+                <p class="page1__nameTitle">Your Full Name</p>
+                <input type="text" class="page1__nameInput">
+            </div>
+            <div class="page1__id">
+                <p class="page1__idTitle">Your Full ID</p>
+                <input type="text" class="page1__idInput">
+            </div>
 
-    <section class="page1">
-        <div class="page1__name">
-            <p class="page1__nameTitle">Your Full Name</p>
-            <input type="text" class="page1__nameInput">
-        </div>
-        <div class="page1__id">
-            <p class="page1__idTitle">Your Full ID</p>
-            <input type="text" class="page1__idInput">
-        </div>
-
-        <button type="submit" class="page1__submit btn">Confirm</button>
-
-    </section>
-    <p class="author">Develeped by:<br><span class="author__name">Mohammad Younoch </span> </p>
-</div>
+            <button type="submit" class="page1__submit btn">Confirm</button>
+        </section>
+        <section class="page2">
+            <div class="page2__text">
+                <p>Hey,</p>
+                <p class="page2__user-name">Mohammad Younoch</p>
+                <p>find your best</p>
+                <p class="page2__batch">Batchmate</p>
+                <p>with your luck</p>
+            </div>
+            <button type="submit" class="page2__submit btn">Spin Now</button>
+        </section>
+        <footer>
+            <p class="author">Develeped by:<br><span class="author__name">Mohammad Younoch </span> </p>
+        </footer>
+        
+    </main>
 </body>
 <script src="https://unpkg.com/vue@next"></script>
 <script src="app.js"></script>
