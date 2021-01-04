@@ -106,7 +106,7 @@ body {
   color: #1B1464;
   width: fit-content;
   z-index: 1;
-  display: none; }
+  visibility: visible; }
   .page1__name {
     margin: 3vw; }
   .page1__nameTitle, .page1__idTitle {
@@ -128,14 +128,13 @@ body {
 .page2 {
   z-index: 2;
   position: absolute;
-  position: absolute;
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   color: #1B1464;
   width: 100%;
-  transform: translateY(-42%);
-  display: none; }
+  top: 52%;
+  visibility: hidden; }
   .page2__text {
     font-size: 7.5vw;
     font-weight: 600; }
@@ -150,3 +149,33 @@ body {
     font-weight: 700; }
   .page2__submit {
     margin-top: 5vw; }
+
+.page3 {
+  z-index: 3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #1B1464;
+  font-size: 6.5vw;
+  width: 100vw;
+  top: 52%;
+  visibility: hidden; }
+  .page3__output__name {
+    font-size: 7.5vw;
+    color: #FF4545;
+    font-weight: 700; }
+  .page3__output__description {
+    margin-top: 2vw;
+    display: inline-block;
+    position: relative; }
+  .page3__decMsg {
+    padding-top: 10vw; }
+  .page3__btn {
+    padding: 5vw 2vh 0 0; }
+    .page3__btn__yes {
+      margin-right: 5vw;
+      width: 30vw; }
+    .page3__btn__no {
+      margin-left: 5vw; }

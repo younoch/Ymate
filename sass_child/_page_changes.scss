@@ -9,7 +9,7 @@
     width: fit-content;
     z-index: 1;
     //temporay value 
-    display: none;
+    visibility: visible;
     &__name{
         margin: 3vw;
     }
@@ -42,14 +42,13 @@
 
 .page2{
     z-index: 2;
-    position: absolute;
     @include center-v;
     color: $color-voilate;
     width: 100%;
-    transform: translateY(-42%);
+    top: 52%;
 
-    //temporay value 
-    display: none;
+    //temporay value
+    visibility: hidden;
 
     &__text {
         font-size: 7.5vw;
@@ -73,3 +72,40 @@
         margin-top: 5vw;
     }
 }
+.page3 {
+    z-index: 3;
+    @include center;
+    color: $color-voilate;
+    font-size: 6.5vw;
+    width: 100vw;
+    top: 52%;
+    visibility: hidden;
+    &__output {
+        
+        &__name {
+            font-size: 7.5vw;
+            color: $color-tomato-light;
+            font-weight: 700;
+        }
+
+        &__description {
+            margin-top: 2vw;
+            display: inline-block;
+            position: relative;
+        }
+    }
+    &__decMsg {
+        padding-top: 10vw;
+    }
+    &__btn {
+        padding: 5vw 2vh 0 0;
+        &__yes {
+            margin-right: 5vw;
+
+            width: 30vw;
+        }
+        &__no {
+            margin-left: 5vw;
+        }
+    }
+} 
