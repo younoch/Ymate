@@ -83,7 +83,7 @@
     &__output {
         
         &__name {
-            font-size: 7.5vw;
+            font-size: 7.9vw;
             color: $color-tomato-light;
             font-weight: 700;
         }
@@ -92,6 +92,8 @@
             margin-top: 2vw;
             display: inline-block;
             position: relative;
+
+            font-weight: 600;
         }
     }
     &__decMsg {

@@ -163,13 +163,14 @@ body {
   top: 52%;
   visibility: hidden; }
   .page3__output__name {
-    font-size: 7.5vw;
+    font-size: 7.9vw;
     color: #FF4545;
     font-weight: 700; }
   .page3__output__description {
     margin-top: 2vw;
     display: inline-block;
-    position: relative; }
+    position: relative;
+    font-weight: 600; }
   .page3__decMsg {
     padding-top: 10vw; }
   .page3__btn {
