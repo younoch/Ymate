@@ -15,6 +15,8 @@
     transition: all 0.25s;
     position: relative;
     width: fit-content;
+    animation: floting2 1.5s ease-out infinite;
+    
 }
 .btn:hover {
     opacity: 1;
@@ -25,4 +27,10 @@
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
     transform: scaleX(1.05) scaleY(1.07);
     //transform: translate(1px, 2px);
+}
+.warningMassage {
+    color: red;
+    font-size: 4.4vw;
+    font-weight: 500;
+    visibility: hidden;
 }

@@ -3,19 +3,20 @@
     margin: 0%;
     @include center;
     font-size: 6.5vw;
-    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     color:$color-voilate;
     width: fit-content;
     z-index: 1;
+    top: 52%;
+
     //temporay value 
     visibility: visible;
-    &__name{
+    &__name, &__id{
         margin: 3vw;
     }
 
     &__nameTitle, &__idTitle {
-        margin-bottom: 1vh;
+        margin-bottom: 1vw;
     }
     
     &__nameInput, &__idInput {
@@ -27,7 +28,17 @@
         font-size: 5.8vw;
         color: white;
         
-        text-transform: uppercase;
+        text-transform: capitalize;
+        &::placeholder {
+            text-align: center;
+            font-weight: 500;
+            font-size: 4.4vw;
+            color: whitesmoke;
+            opacity: .6;
+            line-height: 105%;
+        }
+        
+        text-align: center;
     } 
 
     &__idInput {
@@ -36,7 +47,7 @@
     }
 
     &__submit {
-        margin-top: 3vh;
+        margin-top: 3vw;
     }
 }
 
@@ -60,6 +71,7 @@
         font-weight: 800;
         font-size: 8.2vw;
         padding: 1vh 0 2vh 0;
+        text-transform: capitalize;
     }
 
     &__batch {
@@ -110,4 +122,47 @@
             margin-left: 5vw;
         }
     }
-} 
+}
+.page4 {
+    
+    @include center;
+    font-size: 5.8vw;
+    top: 51%;
+    width: fit-content;
+    visibility: hidden;
+
+    &__con {
+        padding-bottom: 1.5vh;
+        &__title {
+            color: $color-tomato-light;
+            padding-bottom: 2vh;
+        }
+        &__msg {
+            color: $color-voilate;
+        }
+    }
+    &__result {
+        width: 95%;
+        display:inline-block;
+        padding-top: 1.5vh;
+        font-size: 5.5vw;
+        font-weight: 500;
+
+        & > h3:nth-child(1) {
+            padding-bottom: 1.6vh;
+            font-size: 140%;
+            color: $color-tomato-warm;
+        }
+
+        & > p:nth-child(2) {
+            float: left;
+            width: 59%;
+            text-align: right;
+        }
+        & > p:nth-child(3) {
+            float: right;
+            width: 36%;
+            text-align: left;
+        }
+    }
+}
