@@ -8,11 +8,17 @@
     width: fit-content;
     z-index: 1;
     top: 52%;
+    @include respond(tab-land) {
+        font-size: 3rem;
+    }
 
     //temporay value 
     visibility: visible;
     &__name, &__id{
         margin: 3vw;
+        @include respond(tab-land) {
+            margin: 1rem;
+        }
     }
 
     &__nameTitle, &__idTitle {
@@ -27,6 +33,10 @@
         font-weight: 600;
         font-size: 5.8vw;
         color: white;
+
+        @include respond(tab-land) {
+            font-size: 1rem;
+        }
         
         text-transform: capitalize;
         &::placeholder {
@@ -36,6 +46,10 @@
             color: whitesmoke;
             opacity: .6;
             line-height: 105%;
+
+            @include respond(tab-land) {
+                font-size: 1.5rem;
+            }
         }
         
         text-align: center;
@@ -47,7 +61,7 @@
     }
 
     &__submit {
-        margin-top: 3vw;
+        margin-top: 0w;
     }
 }
 

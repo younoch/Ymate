@@ -5,6 +5,11 @@
     position: absolute;
     top: 0;
     bottom: 0;
+    @include respond(tab-land) {
+        width: 600px;
+        height: 1060px;
+        @include center;
+    }
     
 
     &__back {

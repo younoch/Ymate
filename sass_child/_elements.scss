@@ -15,8 +15,9 @@
     transition: all 0.25s;
     position: relative;
     width: fit-content;
-    animation: floting2 1.5s ease-out infinite;
-    
+    @include respond(tab-land) {
+        font-size: 2.1rem;
+    }
 }
 .btn:hover {
     opacity: 1;
