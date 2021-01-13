@@ -9,7 +9,7 @@
     z-index: 1;
     top: 52%;
     @include respond(tab-land) {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
     //temporay value 
@@ -17,25 +17,31 @@
     &__name, &__id{
         margin: 3vw;
         @include respond(tab-land) {
-            margin: 1rem;
+            margin: 0;
         }
     }
 
     &__nameTitle, &__idTitle {
         margin-bottom: 1vw;
+        @include respond(tab-land) {
+            margin: .75rem;
+            font-size: 2.5rem;
+        }
     }
     
     &__nameInput, &__idInput {
-        background-color: $color-voilate;
-        border-radius: 8px;
-        padding: 1.25vw 2vw;
-
         font-weight: 600;
         font-size: 5.8vw;
         color: white;
 
+        background-color: $color-voilate;
+        border-radius: 8px;
+        padding: 1.25vw 2vw;
+
         @include respond(tab-land) {
-            font-size: 1rem;
+            font-size: 2rem;
+            padding: .75rem 1rem;
+            border-radius: .8rem;
         }
         
         text-transform: capitalize;
@@ -48,7 +54,7 @@
             line-height: 105%;
 
             @include respond(tab-land) {
-                font-size: 1.5rem;
+                font-size: 1.8rem;
             }
         }
         
@@ -56,12 +62,14 @@
     } 
 
     &__idInput {
-        width: 50vw;
+        width: 60%;
         max-width: fit-content;
     }
-
     &__submit {
-        margin-top: 0w;
+        margin-top: 2vw;
+        @include respond(tab-land) {
+            margin-top: 1.5rem;
+        }
     }
 }
 
@@ -71,23 +79,33 @@
     color: $color-voilate;
     width: 100%;
     top: 52%;
-
     //temporay value
     visibility: hidden;
+    @include respond(tab-land) {
+    }
 
     &__text {
         font-size: 7.5vw;
         font-weight: 600;
+        & p {
+            @include respond(tab-land) {
+                font-size: 2.5rem ;
+            }
+        }
     }
-
+    
     &__user-name{
         color: black;
         font-weight: 800;
         font-size: 8.2vw;
         padding: 1vh 0 2vh 0;
         text-transform: capitalize;
-    }
 
+        @include respond(tab-land) {
+            font-size: 3rem !important;
+            padding: 2rem 0 2rem 0;
+        }
+    }
     &__batch {
         color: $color-tomato-warm;
         text-transform: uppercase;
@@ -96,6 +114,9 @@
 
     &__submit {
         margin-top: 5vw;
+        @include respond(tab-land) {
+            margin-top: 2.5rem;
+        }
     }
 }
 .page3 {
@@ -106,12 +127,20 @@
     width: 100vw;
     top: 52%;
     visibility: hidden;
+
+    @include respond(tab-land) {
+        font-size: 4rem;
+    }
+
     &__output {
         
         &__name {
             font-size: 7.9vw;
             color: $color-tomato-light;
             font-weight: 700;
+            @include respond(tab-land) {
+                font-size: 3rem;
+            }
         }
 
         &__description {
@@ -120,25 +149,43 @@
             position: relative;
 
             font-weight: 600;
+
+            @include respond(tab-land) {
+                margin-top: 2rem;
+            }
         }
     }
     &__decMsg {
         padding-top: 10vw;
+        @include respond(tab-land) {
+            padding-top: 5rem;
+        }
+        
     }
     &__btn {
         padding: 5vw 2vh 0 0;
+        @include respond(tab-land) {
+            padding: 5rem 2rem 0 0;
+        }
         &__yes {
             margin-right: 5vw;
-
             width: 30vw;
+            @include respond(tab-land) {
+                margin-right: 5rem;
+                width: 10rem;
+            }
         }
+
         &__no {
             margin-left: 5vw;
+            @include respond(tab-land) {
+                margin-left: 5rem; 
+            }
+            
         }
     }
 }
 .page4 {
-    
     @include center;
     font-size: 5.8vw;
     top: 51%;

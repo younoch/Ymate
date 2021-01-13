@@ -2,7 +2,15 @@
     margin: 0;
     padding: 0;
     //box-sizing: border-box;
+    @include respond(tab-land) {
+        font-size: 112.5%;
+    }
+
+    @include respond(desk) {
+        font-size: 30px;
+    }
 }
+
 body {
     font-size: 10vw;
     position: relative;
@@ -15,6 +23,7 @@ body {
         height: 100vh;
         width: 100vh;
         background: gray;
+        @include center;
     }
 }
 .container {
@@ -23,10 +32,11 @@ body {
     text-align: center; 
     @include center;
     @include respond(tab-land) {
-        width: 600px;
-        height: 1060px;
+        width: 37.5rem;
+        height: 66.25rem;
         @include center;
     }
+    
 }
 .author {
     position: absolute;
@@ -44,6 +54,7 @@ body {
     @include respond(tab-land) {
         font-size: 2.2rem;
         bottom: 30px;
+        bottom: 3rem;
     }
 
     &__name {
@@ -53,7 +64,7 @@ body {
         margin-top: 2vh;
         @include respond(tab-land) {
             font-size: 2.3rem;
-            margin-top: 20px;
+            margin-top: 1rem;
         }
         
     }
