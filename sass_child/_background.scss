@@ -5,7 +5,7 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    @include respond(tab-land) {
+    @include respond(tab-port) {
         width: 37.5rem;
         height: 66.25rem;
         @include center;
@@ -38,7 +38,7 @@
         color: $color-blue;
         animation: floting 1s ease-out infinite;
 
-        @include respond(tab-land) {
+        @include respond(tab-port) {
             right: 2.5rem;
             top: 2.5rem;
             font-size: 3rem;

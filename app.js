@@ -50,13 +50,13 @@ var activePage3 = ()=> {
 }
 document.querySelector(".page2__submit").addEventListener("click", activePage3 );
 
-var activePage1 = ()=> {
+var activePage2Return = ()=> {
     page3Class.style.visibility = 'hidden';
-    page1Class.style.visibility = 'visible';
+    page2Class.style.visibility = 'visible';
     document.querySelector('.page1__nameInput').value = null;
     document.querySelector('.page1__idInput').value = null;
 }
-document.querySelector(".page3__btn__no").addEventListener("click", activePage1 );
+document.querySelector(".page3__btn__no").addEventListener("click", activePage2Return );
 
 var activePage4 = ()=> {
     page3Class.style.visibility = 'hidden';

@@ -48,7 +48,7 @@
   transition: all 0.25s;
   position: relative;
   width: fit-content; }
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     .btn, .btn:link, .btn:visited {
       font-size: 2.1rem;
       padding: 1rem 1.8rem;
@@ -67,13 +67,17 @@
   font-size: 4.4vw;
   font-weight: 500;
   visibility: hidden; }
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     .warningMassage {
       font-size: 1.6rem; } }
 
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
+  @media (min-width: 768px) {
+    * {
+      font-size: 10px; } }
   @media (min-width: 1024px) {
     * {
       font-size: 112.5%; } }
@@ -87,12 +91,15 @@ body {
   font-family: 'Roboto', sans-serif;
   height: 177.777777777777777vw;
   width: 100vw; }
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     body {
       font-size: 1rem;
       height: 100vh;
       width: 100vh;
-      background: gainsboro;
+      background-image: url("https://cdn.dribbble.com/users/925716/screenshots/3333720/attachments/722375/night.png");
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      background-position: center;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -108,7 +115,7 @@ body {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     .container {
       width: 37.5rem;
       height: 66.25rem;
@@ -133,7 +140,7 @@ body {
   text-decoration: none;
   color: yellow;
   line-height: 180%; }
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     .author {
       font-size: 2.2rem;
       bottom: 30px;
@@ -143,7 +150,7 @@ body {
     font-weight: 800;
     color: #FF3726;
     margin-top: 2vh; }
-    @media (min-width: 1024px) {
+    @media (min-width: 768px) {
       .author__name {
         font-size: 2.3rem;
         margin-top: 1rem; } }
@@ -155,7 +162,7 @@ body {
   position: absolute;
   top: 0;
   bottom: 0; }
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     .bk {
       width: 37.5rem;
       height: 66.25rem;
@@ -186,7 +193,7 @@ body {
     font-size: 7vw;
     color: #43A6FF;
     animation: floting 1s ease-out infinite; }
-    @media (min-width: 1024px) {
+    @media (min-width: 768px) {
       .bk__info {
         right: 2.5rem;
         top: 2.5rem;
@@ -206,17 +213,17 @@ body {
   z-index: 1;
   top: 52%;
   visibility: visible; }
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     .page1 {
       font-size: 4rem; } }
   .page1__name, .page1__id {
     margin: 3vw; }
-    @media (min-width: 1024px) {
+    @media (min-width: 768px) {
       .page1__name, .page1__id {
         margin: 0; } }
   .page1__nameTitle, .page1__idTitle {
     margin-bottom: 1vw; }
-    @media (min-width: 1024px) {
+    @media (min-width: 768px) {
       .page1__nameTitle, .page1__idTitle {
         margin: .75rem;
         font-size: 2.5rem; } }
@@ -229,7 +236,7 @@ body {
     padding: 1.25vw 2vw;
     text-transform: capitalize;
     text-align: center; }
-    @media (min-width: 1024px) {
+    @media (min-width: 768px) {
       .page1__nameInput, .page1__idInput {
         font-size: 2rem;
         padding: .75rem 1rem;
@@ -241,7 +248,7 @@ body {
       color: whitesmoke;
       opacity: .6;
       line-height: 105%; }
-      @media (min-width: 1024px) {
+      @media (min-width: 768px) {
         .page1__nameInput::placeholder, .page1__idInput::placeholder {
           font-size: 1.8rem; } }
   .page1__idInput {
@@ -249,7 +256,7 @@ body {
     max-width: fit-content; }
   .page1__submit {
     margin-top: 2vw; }
-    @media (min-width: 1024px) {
+    @media (min-width: 768px) {
       .page1__submit {
         margin-top: 1.5rem; } }
 
@@ -266,7 +273,7 @@ body {
   .page2__text {
     font-size: 7.5vw;
     font-weight: 600; }
-    @media (min-width: 1024px) {
+    @media (min-width: 768px) {
       .page2__text > p {
         font-size: 2.5rem; } }
   .page2__user-name {
@@ -275,7 +282,7 @@ body {
     font-size: 8.2vw;
     padding: 1vh 0 2vh 0;
     text-transform: capitalize; }
-    @media (min-width: 1024px) {
+    @media (min-width: 768px) {
       .page2__user-name {
         font-size: 3rem !important;
         padding: .5rem 0 1rem 0; } }
@@ -285,7 +292,7 @@ body {
     font-weight: 700; }
   .page2__submit {
     margin-top: 5vw; }
-    @media (min-width: 1024px) {
+    @media (min-width: 768px) {
       .page2__submit {
         margin-top: 3rem; } }
 
@@ -301,14 +308,14 @@ body {
   width: 100vw;
   top: 52%;
   visibility: hidden; }
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     .page3 {
       font-size: 4rem; } }
   .page3__output__name {
     font-size: 7.9vw;
     color: #FF4545;
     font-weight: 700; }
-    @media (min-width: 1024px) {
+    @media (min-width: 768px) {
       .page3__output__name {
         font-size: 3rem; } }
   .page3__output__description {
@@ -316,33 +323,33 @@ body {
     display: inline-block;
     position: relative;
     font-weight: 600; }
-    @media (min-width: 1024px) {
+    @media (min-width: 768px) {
       .page3__output__description {
         margin-top: 1rem; } }
-    @media (min-width: 1024px) {
+    @media (min-width: 768px) {
       .page3__output__description p {
         font-size: 2.5rem; } }
   .page3__decMsg {
     padding-top: 10vw; }
-    @media (min-width: 1024px) {
+    @media (min-width: 768px) {
       .page3__decMsg {
         padding-top: 3rem;
         font-size: 2.3rem; } }
   .page3__btn {
     padding: 5vw 0 0 0; }
-    @media (min-width: 1024px) {
+    @media (min-width: 768px) {
       .page3__btn {
         padding: 2rem 0 0 0; } }
     .page3__btn__yes {
       margin-right: 5vw;
       width: 30vw; }
-      @media (min-width: 1024px) {
+      @media (min-width: 768px) {
         .page3__btn__yes {
           margin-right: 2.5rem;
           width: 12rem; } }
     .page3__btn__no {
       margin-left: 5vw; }
-      @media (min-width: 1024px) {
+      @media (min-width: 768px) {
         .page3__btn__no {
           margin-left: 2.5rem; } }
 
@@ -356,24 +363,24 @@ body {
   top: 51.5%;
   width: fit-content;
   visibility: hidden; }
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     .page4 {
       font-size: 2.5rem; } }
   .page4__con {
     padding-bottom: 1.5vh; }
-    @media (min-width: 1024px) {
+    @media (min-width: 768px) {
       .page4__con {
         padding-bottom: 1rem; } }
     .page4__con__title {
       color: #FF4545;
       padding-bottom: 2vh;
       font-size: 3rem; }
-      @media (min-width: 1024px) {
+      @media (min-width: 768px) {
         .page4__con__title {
           padding-bottom: .5rem; } }
     .page4__con__msg {
       color: #1B1464; }
-      @media (min-width: 1024px) {
+      @media (min-width: 768px) {
         .page4__con__msg {
           font-size: 3rem; } }
   .page4__result {
@@ -382,18 +389,18 @@ body {
     padding-top: 1.5vh;
     font-size: 5.5vw;
     font-weight: 500; }
-    @media (min-width: 1024px) {
+    @media (min-width: 768px) {
       .page4__result {
         font-size: 2.5rem;
         padding-top: 1rem; } }
-    @media (min-width: 1024px) {
+    @media (min-width: 768px) {
       .page4__result p {
         font-size: 2rem; } }
     .page4__result > h3:nth-child(1) {
       padding-bottom: 1.6vh;
       font-size: 140%;
       color: #FF3726; }
-      @media (min-width: 1024px) {
+      @media (min-width: 768px) {
         .page4__result > h3:nth-child(1) {
           padding-bottom: 1rem; } }
     .page4__result > p:nth-child(2) {
