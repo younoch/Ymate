@@ -87,7 +87,7 @@
     &__text {
         font-size: 7.5vw;
         font-weight: 600;
-        & p {
+        & > p {
             @include respond(tab-land) {
                 font-size: 2.5rem ;
             }
@@ -103,7 +103,7 @@
 
         @include respond(tab-land) {
             font-size: 3rem !important;
-            padding: 2rem 0 2rem 0;
+            padding: .5rem 0 1rem 0;
         }
     }
     &__batch {
@@ -115,7 +115,7 @@
     &__submit {
         margin-top: 5vw;
         @include respond(tab-land) {
-            margin-top: 2.5rem;
+            margin-top: 3rem;
         }
     }
 }
@@ -149,77 +149,114 @@
             position: relative;
 
             font-weight: 600;
-
             @include respond(tab-land) {
-                margin-top: 2rem;
+                margin-top: 1rem
+            }
+
+            & p {
+                @include respond(tab-land) {
+                    font-size: 2.5rem;
+                }
             }
         }
     }
     &__decMsg {
         padding-top: 10vw;
         @include respond(tab-land) {
-            padding-top: 5rem;
+            padding-top: 3rem;
+            font-size: 2.3rem;
         }
         
     }
     &__btn {
-        padding: 5vw 2vh 0 0;
+        padding: 5vw 0 0 0;
         @include respond(tab-land) {
-            padding: 5rem 2rem 0 0;
+            padding: 2rem 0 0 0;
         }
         &__yes {
             margin-right: 5vw;
             width: 30vw;
             @include respond(tab-land) {
-                margin-right: 5rem;
-                width: 10rem;
+                margin-right: 2.5rem;
+                width: 12rem;
             }
         }
 
         &__no {
             margin-left: 5vw;
             @include respond(tab-land) {
-                margin-left: 5rem; 
+                margin-left: 2.5rem; 
             }
-            
         }
     }
 }
+
+
 .page4 {
     @include center;
     font-size: 5.8vw;
-    top: 51%;
+    top: 51.5%;
     width: fit-content;
     visibility: hidden;
+    
+    @include respond(tab-land){
+        font-size: 2.5rem;
+    }
 
     &__con {
         padding-bottom: 1.5vh;
+        @include respond(tab-land){
+            padding-bottom: 1rem;
+        }
         &__title {
             color: $color-tomato-light;
             padding-bottom: 2vh;
+            font-size: 3rem;
+            @include respond(tab-land){
+                padding-bottom: .5rem;
+            }
         }
+
         &__msg {
             color: $color-voilate;
+            @include respond(tab-land){
+                font-size: 3rem;
+            }
         }
     }
+
     &__result {
         width: 95%;
         display:inline-block;
         padding-top: 1.5vh;
         font-size: 5.5vw;
         font-weight: 500;
+        @include respond(tab-land) {
+            font-size: 2.5rem;
+            padding-top: 1rem;
+        }
+        & p {
+            @include respond(tab-land) {
+                font-size: 2rem;
+            }
+        }
 
         & > h3:nth-child(1) {
             padding-bottom: 1.6vh;
             font-size: 140%;
             color: $color-tomato-warm;
+            @include respond(tab-land) {
+                padding-bottom: 1rem;
+            }
         }
 
         & > p:nth-child(2) {
             float: left;
             width: 59%;
             text-align: right;
+            
         }
+
         & > p:nth-child(3) {
             float: right;
             width: 36%;

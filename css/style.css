@@ -92,7 +92,7 @@ body {
       font-size: 1rem;
       height: 100vh;
       width: 100vh;
-      background: gray;
+      background: gainsboro;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -267,7 +267,7 @@ body {
     font-size: 7.5vw;
     font-weight: 600; }
     @media (min-width: 1024px) {
-      .page2__text p {
+      .page2__text > p {
         font-size: 2.5rem; } }
   .page2__user-name {
     color: black;
@@ -278,7 +278,7 @@ body {
     @media (min-width: 1024px) {
       .page2__user-name {
         font-size: 3rem !important;
-        padding: 2rem 0 2rem 0; } }
+        padding: .5rem 0 1rem 0; } }
   .page2__batch {
     color: #FF3726;
     text-transform: uppercase;
@@ -287,7 +287,7 @@ body {
     margin-top: 5vw; }
     @media (min-width: 1024px) {
       .page2__submit {
-        margin-top: 2.5rem; } }
+        margin-top: 3rem; } }
 
 .page3 {
   z-index: 3;
@@ -318,29 +318,33 @@ body {
     font-weight: 600; }
     @media (min-width: 1024px) {
       .page3__output__description {
-        margin-top: 2rem; } }
+        margin-top: 1rem; } }
+    @media (min-width: 1024px) {
+      .page3__output__description p {
+        font-size: 2.5rem; } }
   .page3__decMsg {
     padding-top: 10vw; }
     @media (min-width: 1024px) {
       .page3__decMsg {
-        padding-top: 5rem; } }
+        padding-top: 3rem;
+        font-size: 2.3rem; } }
   .page3__btn {
-    padding: 5vw 2vh 0 0; }
+    padding: 5vw 0 0 0; }
     @media (min-width: 1024px) {
       .page3__btn {
-        padding: 5rem 2rem 0 0; } }
+        padding: 2rem 0 0 0; } }
     .page3__btn__yes {
       margin-right: 5vw;
       width: 30vw; }
       @media (min-width: 1024px) {
         .page3__btn__yes {
-          margin-right: 5rem;
-          width: 10rem; } }
+          margin-right: 2.5rem;
+          width: 12rem; } }
     .page3__btn__no {
       margin-left: 5vw; }
       @media (min-width: 1024px) {
         .page3__btn__no {
-          margin-left: 5rem; } }
+          margin-left: 2.5rem; } }
 
 .page4 {
   position: absolute;
@@ -349,26 +353,49 @@ body {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   font-size: 5.8vw;
-  top: 51%;
+  top: 51.5%;
   width: fit-content;
   visibility: hidden; }
+  @media (min-width: 1024px) {
+    .page4 {
+      font-size: 2.5rem; } }
   .page4__con {
     padding-bottom: 1.5vh; }
+    @media (min-width: 1024px) {
+      .page4__con {
+        padding-bottom: 1rem; } }
     .page4__con__title {
       color: #FF4545;
-      padding-bottom: 2vh; }
+      padding-bottom: 2vh;
+      font-size: 3rem; }
+      @media (min-width: 1024px) {
+        .page4__con__title {
+          padding-bottom: .5rem; } }
     .page4__con__msg {
       color: #1B1464; }
+      @media (min-width: 1024px) {
+        .page4__con__msg {
+          font-size: 3rem; } }
   .page4__result {
     width: 95%;
     display: inline-block;
     padding-top: 1.5vh;
     font-size: 5.5vw;
     font-weight: 500; }
+    @media (min-width: 1024px) {
+      .page4__result {
+        font-size: 2.5rem;
+        padding-top: 1rem; } }
+    @media (min-width: 1024px) {
+      .page4__result p {
+        font-size: 2rem; } }
     .page4__result > h3:nth-child(1) {
       padding-bottom: 1.6vh;
       font-size: 140%;
       color: #FF3726; }
+      @media (min-width: 1024px) {
+        .page4__result > h3:nth-child(1) {
+          padding-bottom: 1rem; } }
     .page4__result > p:nth-child(2) {
       float: left;
       width: 59%;
