@@ -19,21 +19,23 @@
         <i class='fas bk__info'>&#xf05a;</i>
     </div>
     <main class="container">
+        <!-- Page:1 Start -->
+        <form action="http://localhost:8080/api/v1/user" method="post">
+            <section class="page1">
+                <div class="page1__name">
+                    <p class="page1__nameTitle">Your Full Name</p>
+                    <input type="text" placeholder="e. g. Nona Mia" class="page1__nameInput" name="mateName">
+                    <p class="warningMassage" id="NameWarn">write your correct name</p>
+                </div>
+                <div class="page1__id">
+                    <p class="page1__idTitle">Your Full ID</p>
+                    <input type="number" placeholder="e.g.19007230000" step="1" class="page1__idInput" name="mateId">
+                    <p class="warningMassage" id="idWarn">write your ID correctly</p>
+                </div>
+                <button type="submit" class="page1__submit btn">Confirm</button>
+            </section>
+        </form>
 
-        <section class="page1">
-            <div class="page1__name">
-                <p class="page1__nameTitle">Your Full Name</p>
-                <input type="text" placeholder="e. g. Hero Alam" class="page1__nameInput">
-                <p class="warningMassage" id="NameWarn">write your correct name</p>
-            </div>
-            <div class="page1__id">
-                <p class="page1__idTitle">Your Full ID</p>
-                <input type="number" placeholder="e.g.19007230000" class="page1__idInput">
-                <p class="warningMassage" id="idWarn">write your ID correctly</p>
-            </div>
-
-            <button type="submit" class="page1__submit btn">Confirm</button>
-        </section>
         <!-- Page:1 End -->
 
         <section class="page2">
