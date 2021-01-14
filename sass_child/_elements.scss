@@ -15,8 +15,11 @@
     transition: all 0.25s;
     position: relative;
     width: fit-content;
-    animation: floting2 1.5s ease-out infinite;
-    
+    @include respond(tab-port) {
+        font-size: 2.1rem;
+        padding: 1rem 1.8rem;
+        border-radius: 1rem;
+    }
 }
 .btn:hover {
     opacity: 1;
@@ -33,4 +36,7 @@
     font-size: 4.4vw;
     font-weight: 500;
     visibility: hidden;
+    @include respond(tab-port) {
+        font-size: 1.6rem;
+    }
 }

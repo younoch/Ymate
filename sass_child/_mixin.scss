@@ -49,30 +49,31 @@
 
 @keyframes floting2 {
     0% {
-        transform: scale(1);
-        opacity: .8;
+        left: 0px;
     }
-    20% {
-        transform: scale(1.05);
-        opacity: .9;
-    }
-    40% {
-        transform: scale(1.1025);
-        opacity: .95;
+    25% {
+        left: 5px;
     }
     50% {
-        transform: scale(1.1300625);
+        left: 0px;
     }
-    60% {
-        transform: scale(1.1025);
-        opacity: .9;
-    }
-    80% {
-        transform: scale(1.05);
-        opacity: .8;
+    75% {
+        left: -5px;
     }
     100% {
-        transform: scale(1);
-        opacity: .7;
-    }  
+        left: 0px;
+    }
+}
+
+@mixin respond($breakpoint) {
+    
+    @if $breakpoint == tab-port {
+       @media (min-width: 768px) { @content};    //768px
+   }
+   @if $breakpoint == tab-land {
+       @media (min-width: 1024px) { @content};     //1024px
+   }
+   @if $breakpoint == desk {
+       @media (min-width: 1280px) { @content};    //1280px
+   }
 }
