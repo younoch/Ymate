@@ -71,7 +71,7 @@
        @media (min-width: 768px) { @content};    //768px
    }
    @if $breakpoint == tab-land {
-       @media (min-width: 1024px) { @content};     //1024px
+       @media (min-width: 1024px) { @content};    //1024px
    }
    @if $breakpoint == desk {
        @media (min-width: 1280px) { @content};    //1280px

@@ -40,6 +40,7 @@
   outline: none;
   border: none;
   text-shadow: none;
+  text-decoration: none;
   padding: 10px 18px;
   border-radius: 13px;
   font-size: 5vw;
@@ -143,7 +144,7 @@ body {
   @media (min-width: 768px) {
     .author {
       font-size: 2.2rem;
-      bottom: 30px;
+      bottom: 3rem;
       bottom: 3rem; } }
   .author__name {
     font-size: 6.5vw;
@@ -152,7 +153,7 @@ body {
     margin-top: 2vh; }
     @media (min-width: 768px) {
       .author__name {
-        font-size: 2.3rem;
+        font-size: 2.8rem;
         margin-top: 1rem; } }
 
 .bk {
@@ -211,8 +212,7 @@ body {
   color: #1B1464;
   width: fit-content;
   z-index: 1;
-  top: 52%;
-  visibility: visible; }
+  top: 52%; }
   @media (min-width: 768px) {
     .page1 {
       font-size: 4rem; } }
@@ -268,8 +268,7 @@ body {
   transform: translateY(-50%);
   color: #1B1464;
   width: 100%;
-  top: 52%;
-  visibility: hidden; }
+  top: 52%; }
   .page2__text {
     font-size: 7.5vw;
     font-weight: 600; }
@@ -306,8 +305,7 @@ body {
   color: #1B1464;
   font-size: 6.5vw;
   width: 100vw;
-  top: 52%;
-  visibility: hidden; }
+  top: 52%; }
   @media (min-width: 768px) {
     .page3 {
       font-size: 4rem; } }
@@ -345,13 +343,13 @@ body {
       width: 30vw; }
       @media (min-width: 768px) {
         .page3__btn__yes {
-          margin-right: 2.5rem;
-          width: 12rem; } }
+          margin-right: 2.2rem;
+          width: 20rem; } }
     .page3__btn__no {
       margin-left: 5vw; }
       @media (min-width: 768px) {
         .page3__btn__no {
-          margin-left: 2.5rem; } }
+          margin-left: 2.2rem; } }
 
 .page4 {
   position: absolute;
@@ -361,8 +359,7 @@ body {
   transform: translate(-50%, -50%);
   font-size: 5.8vw;
   top: 51.5%;
-  width: fit-content;
-  visibility: hidden; }
+  width: fit-content; }
   @media (min-width: 768px) {
     .page4 {
       font-size: 2.5rem; } }

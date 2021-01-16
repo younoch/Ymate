@@ -13,7 +13,6 @@
     }
 
     //temporay value 
-    visibility: visible;
     &__name, &__id{
         margin: 3vw;
         @include respond(tab-port) {
@@ -79,8 +78,7 @@
     color: $color-voilate;
     width: 100%;
     top: 52%;
-    //temporay value
-    visibility: hidden;
+
     @include respond(tab-port) {
     }
 
@@ -126,7 +124,6 @@
     font-size: 6.5vw;
     width: 100vw;
     top: 52%;
-    visibility: hidden;
 
     @include respond(tab-port) {
         font-size: 4rem;
@@ -177,15 +174,15 @@
             margin-right: 5vw;
             width: 30vw;
             @include respond(tab-port) {
-                margin-right: 2.5rem;
-                width: 12rem;
+                margin-right: 2.2rem;
+                width: 20rem;
             }
         }
 
         &__no {
             margin-left: 5vw;
             @include respond(tab-port) {
-                margin-left: 2.5rem; 
+                margin-left: 2.2rem; 
             }
         }
     }
@@ -197,7 +194,7 @@
     font-size: 5.8vw;
     top: 51.5%;
     width: fit-content;
-    visibility: hidden;
+
     
     @include respond(tab-port){
         font-size: 2.5rem;

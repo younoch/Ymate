@@ -35,7 +35,6 @@ body {
     }
 }
 
-
 .container {
     height: 100%;
     width: 100%;
@@ -63,14 +62,19 @@ body {
     line-height: 180%;
     @include respond(tab-port) {
         font-size: 2.2rem;
-        bottom: 30px;
+        bottom: 3rem;
         bottom: 3rem;
     }
 
-    &__name {
+    &__name { 
         font-size: 6.5vw;
         font-weight: 800;
         color: $color-tomato-warm;      
-        margin-top: 2vh;   
+        margin-top: 2vh;
+
+        @include respond(tab-port) {
+            font-size: 2.8rem;
+            margin-top: 1rem;
+        }
         } 
-               
+    }
